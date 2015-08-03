@@ -1,0 +1,78 @@
+---
+pageable: true
+per_page: 3
+---
+
+<section class="intro-wrapper parallax parallax-1">
+  <div class="container text-center">
+    <div class="intro">
+      <h1 class='hero-title'>Hello, I'm Dan Olsavsky</h1>
+      <p class='lead'>I'm a User Experience Designer, Strategist, and Researcher in Denver, CO</p>
+      <p><a href="#contact" class='btn btn-primary btn-lg'>Let's Work Together</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="work-wrapper" id='work'>
+  <div class="container text-center">
+    <h2 class='section-title'>Work</h2>
+    <%= partial :work %>
+  </div>
+</section>
+
+<section class="journal-wrapper" id='journal'>
+  <div class="container text-center">
+    <h2 class='section-title'>Journal</h2>
+
+    <div class='row'>
+      <div class='col-lg-8 col-lg-offset-2'>
+        <% page_articles.each_with_index do |article, i| %>
+          <article class='article-wrapper'>
+            <h3><%= link_to article.title, article %></h3>
+            <div class='article-date'><%= article.date.strftime('%b %e %Y') %></div>
+            <div class='article-summary'><%= article.summary(140) %></div>
+          </article>
+        <% end %>
+      </div>
+    </div>
+
+    <div class='journal-archive'><a href='/archive/' class='btn btn-primary btn-lg' >Archive</a></div>
+
+    <!--<% if paginate && num_pages > 1 %>
+      <p>Page <%= page_number %> of <%= num_pages %></p>
+
+      <% if prev_page %>
+        <p><%= link_to 'Previous page', prev_page %></p>
+      <% end %>
+    <% end %>
+
+    <% if paginate %>
+      <% if next_page %>
+        <p><%= link_to 'Next page', next_page %></p>
+      <% end %>
+    <% end %>-->
+  </div>
+</section>
+
+<section class="about-wrapper parallax parallax-2" id='about'>
+  <div class="container">
+    <div class='about'>
+      <div class='row'>
+        <div class='col-lg-6'>
+          <div class='project-info'>
+            <div class='clearfix'>
+              <div class='short-rule'></div>
+            </div>
+            <p class='project-title'>About</p>
+            <p class='about-description'>I'm a User Experience Designer and User Interface Developer  based in Denver, CO. I enjoy discovering simple solutions to complex human-system interactions, and designing elegant interfaces for them.</p>
+            <p class='about-description'>Building on over 12 years of industry experience, I am committed to enhancing customer satisfaction and brand loyalty by producing efficient and effective web-based applications.</p>
+            <div class='about-btn-wrapper'><a href="../images/dan_olsavsky_resume.pdf" class='btn btn-primary btn-lg' target='_blank'>View PDF Resume</a></div>
+          </div>
+        </div>
+        <div class='col-lg-6'>
+          <!-- -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
