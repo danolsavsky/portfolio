@@ -31,6 +31,7 @@ GEM
     erubis (2.7.0)
     execjs (2.5.2)
     ffi (1.9.10)
+    git-version-bump (0.15.1)
     haml (4.0.6)
       tilt
     hike (1.2.3)
@@ -88,6 +89,9 @@ GEM
     padrino-support (0.12.5)
       activesupport (>= 3.1)
     rack (1.6.4)
+    rack-contrib (1.4.0)
+      git-version-bump (~> 0.15)
+      rack (~> 1.4)
     rack-test (0.6.3)
       rack (>= 1.0)
     rb-fsevent (0.9.5)
@@ -124,3 +128,4 @@ DEPENDENCIES
   middleman (~> 3.3.12)
   middleman-blog (~> 3.5.3)
   nokogiri
+  rack-contrib
