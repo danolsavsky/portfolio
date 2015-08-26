@@ -23,7 +23,7 @@ The first and most important part of the process was following the directions. I
 * Font selection is up to me
 
 ##Step Two: Evaluation##
-I started my redesign process by doing an informal evaluation and inventory of the current Seminoles website <http://www.seminoles.com> -I focused on features and aesthetics. I broke the site down my section and/or feature and recorded as follows;
+I started my redesign process by doing an informal evaluation and inventory of the current Seminoles website <http://www.seminoles.com> -I focused on features and aesthetics. I broke the site down by section and/or feature as follows;
 
 ![FSU Homepage](2015-08-11-fsu-homepage-redesign/fsu_homepage_original.jpg)
 
